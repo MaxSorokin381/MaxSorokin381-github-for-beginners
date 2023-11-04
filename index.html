@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Delivery Food - доставка еді для дом</title>
+  <title>Delivery Food - доставка ед для дом</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
@@ -21,13 +21,16 @@
         <img src="img/logo.svg" alt="Logo" class="Logo">
       </a>
       
-      <input type="text" class="input input-address" placeholder="Адрес доставки">
-      <h1></h1>
+      <input type="text" class="input input-address" placeholder="        Адрес доставки">
+      
       <div class="buttons">
-        <button class="button button-primary">
+        <button class="button button-primary" id="Auth" >
           <img src="img/user.svg" alt="user" />
           Войти
         </button>
+        
+  
+      
         <button class="button button k">
           <img src="img/shopping-cart.svg" alt="shopping cart" class="button-icon" />
           <span class="button-text">Корзина</span>
@@ -44,7 +47,7 @@
         <section class="restoraunts">
           <div class="section-heading">
             <h2 class="section-title">Рестораны</h2>
-            <input type="text" class="input input-search" placeholder="Поиск блюд и ресторанов">
+            <input type="text" class="input input-search" placeholder="       Поиск блюд и ресторанов">
           </div>
           <div class="cards">
             <div class="card">
@@ -162,8 +165,32 @@
       </div>
     </footer class="footer">
 
+    
   </div>
-
+ <!-- <div class="modalAuth">
+  <div class="modalauth-dialog">
+    <div class="modalauth-header">
+      <h3 class="modalauth-title">Логин</h3>
+      <button class="closeAuth">&times;</button>
+    </div>
+  </div>
+ </div> -->
+ <div class="modalAuth">
+  <div class="modalauth-dialog">
+    <div class="modalauth-header">
+      <h3 class="modalauth-title">Вход</h3>
+      <button class="closeAuth">&times;</button>
+    </div>
+    <div class="modalauth-body">
+      <form class="logInForm">
+        <input type="text" id="login" name="login" placeholder="Логин">
+        <input type="password" id="password" name="password" placeholder="Пароль">
+        <button type="submit" class="button button-primary button-login">Войти</button>
+      </form>
+    </div>
+  </div>
+</div>
+<script src="js/main.js"></script>
 </body>
 
 </html>
